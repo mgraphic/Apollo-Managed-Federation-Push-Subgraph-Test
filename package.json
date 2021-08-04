@@ -10,6 +10,8 @@
         "apollo-server-core": "^3.1.2",
         "concurrently": "^5.1.0",
         "dotenv": "^10.0.0",
+        "file-system": "^2.2.2",
+        "fs": "0.0.1-security",
         "graphql": "^15.5.1",
         "json-server": "^0.16.1",
         "node-fetch": "^2.6.0",

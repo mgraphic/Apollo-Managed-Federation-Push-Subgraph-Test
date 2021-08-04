@@ -9,3 +9,6 @@ ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
 .history
+
+missions.graphql
+astronauts.graphql

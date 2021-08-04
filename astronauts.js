@@ -1,6 +1,7 @@
 const { ApolloServer, gql } = require('apollo-server');
 const { buildFederatedSchema } = require('@apollo/federation');
 const fetch = require('node-fetch');
+const fs = require('file-system');
 
 const port = 4001;
 const apiUrl = 'http://localhost:3000';
@@ -52,5 +53,7 @@ const server = new ApolloServer({
 
     if (!sdl.errors) {
         // console.log('RESULT:', sdl.data._service.sdl);
+
+        fs.writeFile('astronauts.graphql', sdl.data._service.sdl);
     }
 })();
